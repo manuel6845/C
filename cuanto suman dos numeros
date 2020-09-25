@@ -1,0 +1,104 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{geometry}
+\geometry{left=2 cm,right=2cm, top=3cm, bottom=2cm}
+\usepackage{currvita} 
+\usepackage[utf8]{inputenc}% para sacar las tildes y Ñ
+\usepackage[spanish]{babel}% por si aparece algo en ingles
+\usepackage{graphicx}%ingresar imagen
+\usepackage{amssymb}% para añadir simbolos
+\title{ELSE IF}
+
+\setlength{\parskip}{0.2cm}% espacio ente texto y texto
+\pagestyle{empty}%quitar numeracion de pagina
+
+\begin{document}
+\maketitle
+
+ \begin{cvlist}{Autor}
+	\item[Nombre completo]  JOSE MANUEL DIAZ POSADA 
+	\item[Código] 201960133
+	\item[Programa Academico]2710 
+	\item[Correo electrónico]jose.manuel.diaz@correounivalle.edu.co
+\end{cvlist}
+
+este informe sera sobre el comando elseif el cual se explicara que funcion cumple dentro de un algoritmo y dare un ejemplo del codigo antes mencionado.\\elseif, como su nombre lo sugiere, es una combinación de if y else. Del mismo modo que else, extiende una sentencia if para ejecutar una sentencia diferente en caso que la expresión if original se evalúe como FALSE. Sin embargo, a diferencia de else, esa expresión alternativa sólo se ejecutará si la expresión condicional del elseif se evalúa como VERDADERO.\\[0.5pt]
+
+
+EJEMPLO 1
+\begin{verbatim}
+   <?php
+if ($a > $b) {
+    echo "a es mayor que b";
+} elseif ($a == $b) {
+    echo "a es igual que b";
+} else {
+    echo "a es menor que b";
+}
+?>
+\end{verbatim}
+
+Puede haber varios elseif dentro de la misma sentencia if. La primera expresión elseif (si hay alguna) que se evalúe como VERDADERA sería ejecutada. En php también se puede escribir 'else if' (en dos palabras) y el comportamiento sería idéntico al de 'elseif' (en una sola palabra). El significado sintáctico es ligeramente diferente (si se está familiarizado con C, este es el mismo comportamiento) pero la conclusión es que ambos resultarían tener exactamente el mismo comportamiento.
+
+La sentencia elseif es ejecutada solamente si la expresión if precedente y cualquiera de las expresiones elseif precedentes son evaluadas como FALSE, y la expresión elseif actual se evalúa como VERDADERA.
+
+
+
+
+EJEMPLO 2 :CUANTO SUMAN DOS NUMEROS
+
+despues ingresar los anteriores comandos, se puede compilar y el resultado sera el siguente:
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{else if.jpg}
+\caption{else if}
+\label{Figura: 1}
+\end{figure}
+
+
+\begin{verbatim}
+
+codigo compilado 
+
+      int main()
+{
+    int n1, n2, resultado, suma;
+
+    printf( "\n   Introduzca un n%cmero entero: ", 163 );
+    scanf( "%d", &n1 );
+    printf( "\n   Introduzca otro n%cmero entero: ", 163 );
+    scanf( "%d", &n2 );
+    printf( "\n   Cu%cnto suman?: ", 160 );
+    scanf( "%d", &suma );
+
+    resultado = n1 + n2;
+
+    if ( suma == resultado )
+        printf( "\n   CORRECTO" );
+    else
+        printf( "\n   INCORRECTO: La suma es %d", resultado );
+
+    getch(); /* Pausa */
+
+    return 0;
+}
+	
+\end{verbatim}
+
+
+CONCLUCION
+
+en conclucion el else if siempre  se evalúa.
+Si el resultado es verdadero se ejecuta solamente el bloque de sentencias 1
+Si el resultado es false se ejecuta solamente el bloque de sentencias 2.
+En cualquier caso, solamente se ejecuta uno de los dos bloques de sentencias.
+
+
+REFERENCIAS 
+
+
+\begin{itemize}
+
+\item (https://www.php.net/manual/es/control-structures.elseif.php)
+
+\end{itemize}
+\end{document}
